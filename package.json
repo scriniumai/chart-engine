@@ -1,0 +1,40 @@
+{
+  "name": "chart-engine",
+  "version": "1.0.0",
+  "description": "Chart engine",
+  "main": "dist/engine.js",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.ayrex.com:vbykov/chart-engine.git"
+  },
+  "keywords": [
+    "chart",
+    "canvas"
+  ],
+  "author": "Vladimir Bykov",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015-loose-rollup": "^7.0.0",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
+  },
+  "dependencies": {
+    "dynamica": "^1.0.1",
+    "kinetica": "^0.1.0",
+    "renderium": "^0.3.0",
+    "vectory": "^1.1.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015-loose-rollup"
+    ]
+  },
+  "scripts": {
+    "check": "standard src/**/* | snazzy",
+    "build": "rollup -c"
+  }
+}
